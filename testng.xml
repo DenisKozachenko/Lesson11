@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="KozachTest">
+        <classes>
+            <class name="Lesson11.TestOne">
+                <methods>
+                    <include name="canCheckTotalPriceForTShirt"/>
+                </methods>
+            </class>
+
+            <class name="Lesson11.TestTwo">
+                <methods>
+                    <include name="test1"/>
+                    <exclude name="test2"/>
+                </methods>
+            </class>
+
+            <class name="Lesson11.TestThree">
+                <methods>
+                    <include name="instanceDbProvider"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
